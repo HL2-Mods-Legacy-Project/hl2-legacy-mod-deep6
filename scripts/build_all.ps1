@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Deep6" `
+  -ModName "Deep 6" `
+  -ModFolder "deep6" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/deep6/Deep6-Original-Cleaned.zip" `
+  -ModBaseFilesUrlHash "3dc2e9be70154c924eb8337f74b3623f989fe05ae8d2c277b23cb73c4f18139b" `
+  -ModReadmePath "readme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
